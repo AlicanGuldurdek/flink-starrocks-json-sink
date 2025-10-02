@@ -19,8 +19,8 @@ public class FlinkToStarRocksJob {
 
 
         StarRocksSinkOptions sinkOptions = StarRocksSinkOptions.builder()
-                .withProperty("jdbc-url", "jdbc:mysql://192.168.1.103:9030")
-                .withProperty("load-url", "192.168.1.103:8030")
+                .withProperty("jdbc-url", "jdbc:mysql://192.168.1.103:9030")//endi ip adresni yaz
+                .withProperty("load-url", "192.168.1.103:8030")//kendi ip adresini yaz
                 .withProperty("username", "root")
                 .withProperty("password", "")
                 .withProperty("table-name", "user_data")
